@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import './App.css'
-import { Combobox } from '@headlessui/react'
 
 function App() {
 
@@ -30,7 +29,7 @@ function App() {
       },
       body: JSON.stringify(body)
     }
-    const response = await fetch(`http://192.168.31.223:9200/neurona_rm/_search?size=10`, config)
+    const response = await fetch(`http://38.180.40.235:9200/neurona_rm/_search?size=10`, config)
     const data = await response.json()
     console.log(data)
     setData(data.hits)
@@ -42,10 +41,10 @@ function App() {
     fetchSearch(e.target.value)
   }
 
-  const Selectioned = (value:any) => {
-    console.log(value)
-    //setSearch(value)
-  }
+  // const Selectioned = (value:any) => {
+  //   console.log(value)
+  //   //setSearch(value)
+  // }
 
   
 
