@@ -66,7 +66,7 @@ function App() {
         ))}
 
       </ul>
-    
+    <h2>Ver 1.0.0 -- Guillermo Guzman Vargas</h2>
     </div>
     </>
   )
